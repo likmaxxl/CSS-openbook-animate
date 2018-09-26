@@ -1,0 +1,32 @@
+.cent {
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.box {
+  position: relative;
+  width: 250px;
+  height: 400px;
+  perspective: -1200px;
+}
+
+.skw0, .skw, img {
+  position: absolute;
+  width: 250px;
+  height: 400px;
+}
+
+.skw0 {
+  background-color: rgb(126, 224, 39);
+}
+
+.skw {
+  background-color: rgb(22, 17, 65);
+  transition: all 3s;
+}
+
+.box:hover>.skw {
+  transform: rotateY(80deg) translateZ(-125px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, .7)
+}
